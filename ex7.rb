@@ -6,7 +6,7 @@ while true
   if dictionary[x]
     puts "日本語：#{dictionary[x]}"
   else
-    puts "辞書にないので追加します。"
+    puts "#{x}の日本語訳を教えてください。"
     print "日本語:"
     n = gets.chomp
     dictionary[x] = n
