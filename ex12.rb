@@ -5,6 +5,9 @@ class Student
   def name
     @name
   end
+  def affiliation
+    university + faculty
+  end
 end
 
 class KeioStudent < Student
@@ -25,8 +28,8 @@ class EStudent < KeioStudent
   end
 end
 
-taro = PStudent.new('太郎')
-puts "#{taro.name}は#{taro.university}#{taro.faculty}の学生です。"
+#taro = PStudent.new('太郎')
+#puts "#{taro.name}は#{taro.university}#{taro.faculty}の学生です。"
 
 taro = PStudent.new('太郎')
 hanako = EStudent.new('花子')

@@ -1,17 +1,10 @@
 class Student
+  attr_reader :name
+  attr_accessor :score
   def initialize(n)
     @name = n
   end
-  def name
-    @name
-  end
-  def score
-    @score
-  end
-  def score= (s)
-    @score = s
-  end
-  def compare(x)
+   def compare(x)
     case
     when @score > x.score
       "私は#{x.name}より賢い!"
@@ -22,7 +15,6 @@ class Student
     end
   end
 end
-
 taro = Student.new('太郎')
 hanako = Student.new('花子')
 taro.score=(65)
